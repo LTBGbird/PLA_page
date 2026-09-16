@@ -1,258 +1,117 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=950">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-    <style type="text/css">
-        /* Color scheme stolen from Sergey Karayev */
-        a {
-            color: #1772d0;
-            text-decoration: none;
-        }
-
-        a:focus,
-        a:hover {
-            color: #f09228;
-            text-decoration: none;
-        }
-
-        body,
-        td,
-        th,
-        tr,
-        p,
-        a {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 14px
-        }
-
-        .hp-photo {
-            width: 240px;
-            height: 240px;
-            border-radius: 240px;
-            -webkit-border-radius: 240px;
-            -moz-border-radius: 240px;
-        }
-
-        strong {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 14px;
-        }
-
-        heading {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 24px;
-        }
-
-        para {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 18px;
-        }
-
-        papertitle {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 15px;
-            font-weight: 700
-        }
-
-        name {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 32px;
-        }
-
-        .one {
-            width: 160px;
-            height: 160px;
-            position: relative;
-        }
-
-        .two {
-            width: 160px;
-            height: 160px;
-            position: absolute;
-            transition: opacity .2s ease-in-out;
-            -moz-transition: opacity .2s ease-in-out;
-            -webkit-transition: opacity .2s ease-in-out;
-        }
-
-        .fade {
-            transition: opacity .2s ease-in-out;
-            -moz-transition: opacity .2s ease-in-out;
-            -webkit-transition: opacity .2s ease-in-out;
-        }
-
-        span.highlight {
-            background-color: #ffffd0;
-        }
-    </style>
-
+    <meta name="description" content="Liuao Pei, Ph.D. student at The University of Hong Kong. Publications in robot learning, dexterous manipulation, and motion planning.">
     <title>Liuao Pei</title>
-    <!--<link rel="stylesheet" type="text/css" href="/imgs/css" >-->
-    <link rel="icon" type="image/jpg" href="./data/bird.jpg">
+    <link rel="icon" type="image/jpeg" href="data/bird.jpg">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
-
 <body>
-    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
-        <tbody>
-            <tr>
-                <td>
+    <main>
+        <header class="profile">
+            <div class="profile-copy">
+                <h1>Liuao Pei (裴刘奥)</h1>
+                <p>Hi, I'm Liuao Pei. I am currently a second-year Ph.D. student at <a href="https://www.hku.hk/">The University of Hong Kong</a>, fortunately supervised by <a href="http://luoping.me/">Prof. Ping Luo</a> at <a href="https://mmlab.hk/">MMLAB@HKU</a>.</p>
+            </div>
+            <img class="photo" src="data/PLA2021.jpg" width="204" height="269" alt="Liuao Pei">
+        </header>
 
+        <section aria-labelledby="publications">
+            <h2 id="publications">Publications</h2>
+            <p class="contribution-note">* Equal contribution.</p>
 
-                    <!--Open -->
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td width="68%" valign="middle">
-                                    <p align="center">
-                                        <name>Liuao Pei (裴刘奥)</name>
-                                    </p>
+            <article class="publication">
+                <a class="paper-media" href="data/paper/in-hand-assembly.png" aria-label="Enlarge the in-hand assembly figure">
+                    <img src="data/paper/in-hand-assembly.png" width="751" height="307" alt="A single robotic hand assembling a bottle, syringe, and marker, from alignment to insertion.">
+                </a>
+                <div class="paper-details">
+                    <h3><a href="https://arxiv.org/abs/2609.10137">Assembling Two Parts in One Hand</a></h3>
+                    <p class="authors"><strong>Liuao Pei*</strong>, Tianyue Wu*, Hui Zhang, Ping Luo, Jie Song</p>
+                    <p class="venue"><em>Conference on Robot Learning (<strong>CoRL</strong>)</em>, 2026. Accepted.</p>
+                    <p class="paper-links"><a href="https://arxiv.org/pdf/2609.10137">Paper</a> / <a href="https://ltbgbird.github.io/in-hand-assembly-page/">Project</a></p>
+                </div>
+            </article>
 
-                                    <p align="justify">
-                                    Hi, I'm Liuao Pei. I am currently a second-year Ph.D. student in <a href="https://www.hku.hk/">The University of Hong Kong</a>, fortunately supervised by <a href="http://luoping.me/">Prof. Ping Luo</a> at the <a href="https://mmlab.hk/">MMLAB@HKU</a>. 
-                                    </p>
+            <article class="publication">
+                <a class="paper-media" href="data/paper/discrete-diffusion-vla.png" aria-label="Enlarge the Discrete Diffusion VLA architecture figure">
+                    <img src="data/paper/discrete-diffusion-vla.png" width="790" height="479" alt="Discrete Diffusion VLA architecture with a VLM backbone, adaptive action decoding, and secondary re-masking.">
+                </a>
+                <div class="paper-details">
+                    <h3><a href="https://arxiv.org/abs/2508.20072">Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies</a></h3>
+                    <p class="authors">Zhixuan Liang, Yizhuo Li, Tianshuo Yang, Chengyue Wu, Sitong Mao, <strong>Liuao Pei</strong>, Tian Nian, Shunbo Zhou, Xiaokang Yang, Jiangmiao Pang, Yao Mu, Ping Luo</p>
+                    <p class="venue"><em>International Conference on Machine Learning (<strong>ICML</strong>)</em>, 2026.</p>
+                    <p class="paper-links"><a href="https://arxiv.org/pdf/2508.20072">Paper</a> / <a href="https://github.com/Liang-ZX/DiscreteDiffusionVLA">Code</a></p>
+                </div>
+            </article>
 
+            <article class="publication">
+                <a class="paper-media" href="https://ieeexplore.ieee.org/document/11106766">
+                    <img src="data/paper/e2e.png" alt="Optimization-embedded network for autonomous flight trajectory generation." loading="lazy">
+                </a>
+                <div class="paper-details">
+                    <h3><a href="https://ieeexplore.ieee.org/document/11106766">Dynamically Feasible Trajectory Generation With Optimization-Embedded Networks for Autonomous Flight</a></h3>
+                    <p class="authors">Zhichao Han*, Long Xu*, <strong>Liuao Pei</strong>, Fei Gao</p>
+                    <p class="venue"><em>IEEE Robotics and Automation Letters (<strong>RA-L</strong>)</em>, 2025.</p>
+                    <p class="paper-links"><a href="https://ieeexplore.ieee.org/document/11106766">Paper</a></p>
+                </div>
+            </article>
 
-                                    </br>
+            <article class="publication">
+                <div class="paper-media">
+                    <video width="280" muted autoplay loop playsinline controls preload="metadata" aria-label="Autonomous vehicle spatial-temporal trajectory planning demonstration">
+                        <source src="data/paper/efficient_1.mp4" type="video/mp4">
+                        <a href="data/paper/efficient_1.mp4">Watch the trajectory planning demonstration.</a>
+                    </video>
+                </div>
+                <div class="paper-details">
+                    <h3><a href="https://ieeexplore.ieee.org/document/10285583">An Efficient Spatial-Temporal Trajectory Planner for Autonomous Vehicles in Unstructured Environments</a></h3>
+                    <p class="authors">Zhichao Han*, Yuwei Wu*, Tong Li, Lu Zhang, <strong>Liuao Pei</strong>, Long Xu, Chengyang Li, Changjia Ma, Chao Xu, Shaojie Shen, Fei Gao</p>
+                    <p class="venue"><em>IEEE Transactions on Intelligent Transportation Systems (<strong>TITS</strong>)</em>, 25(2):1797–1814, 2024.</p>
+                    <p class="publication-note">First published online in 2023.</p>
+                    <p class="paper-links"><a href="https://ieeexplore.ieee.org/document/10285583">Paper</a></p>
+                </div>
+            </article>
 
-                                    
-                                    </br></br>
-                                    <!-- <strong><font color="red">Looking for a 2025 PhD position in computer vision / robotics perception! Welcome to contact me! </font></strong> -->
+            <article class="publication">
+                <div class="paper-media">
+                    <video width="280" muted autoplay loop playsinline controls preload="metadata" aria-label="Collaborative catching and transportation demonstration">
+                        <source src="data/paper/colleborate.mp4" type="video/mp4">
+                        <a href="data/paper/colleborate.mp4">Watch the collaborative planning demonstration.</a>
+                    </video>
+                </div>
+                <div class="paper-details">
+                    <h3><a href="https://ieeexplore.ieee.org/document/10325486">Collaborative Planning for Catching and Transporting Objects in Unstructured Environments</a></h3>
+                    <p class="authors"><strong>Liuao Pei</strong>, Junxiao Lin, Zhichao Han, Lun Quan, Yanjun Cao, Chao Xu, Fei Gao</p>
+                    <p class="venue"><em>IEEE Robotics and Automation Letters (<strong>RA-L</strong>)</em>, 2023.</p>
+                    <p class="paper-links"><a href="https://ieeexplore.ieee.org/document/10325486">Paper</a></p>
+                </div>
+            </article>
 
-                                    </br>
-                                    </p>
-                                    <p align="center">
-                                        <!-- <a href="data/Liuao_Pei_CV.pdf"> CV </a> / -->
-                                        <!-- <a href="mailto:plaptq@gmail.com"> Email </a> / -->
-                                        <!-- <a href="https://scholar.google.com/citations?user=IxjOo6IAAAAJ&hl=en"> Google Scholar </a> -->
-                                        <!-- <a href="https://github.com/LTBGbird"> Github </a> -->
-                                    </p>
-                                </td>
-                                <td align="right"> <img class="photo" src="./data/PLA2021.jpg"
-                                        style="width: 204; height: 269;"></td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <article class="publication">
+                <div class="paper-media">
+                    <video width="280" muted autoplay loop playsinline controls preload="metadata" aria-label="Whole-body collision evaluation demonstration">
+                        <source src="data/paper/collision_avoidance_1.mp4" type="video/mp4">
+                        <a href="data/paper/collision_avoidance_1.mp4">Watch the collision evaluation demonstration.</a>
+                    </video>
+                </div>
+                <div class="paper-details">
+                    <h3><a href="https://ieeexplore.ieee.org/document/10160516">A Linear and Exact Algorithm for Whole-Body Collision Evaluation via Scale Optimization</a></h3>
+                    <p class="authors">Qianhao Wang*, Zhepei Wang*, <strong>Liuao Pei</strong>, Chao Xu, Fei Gao</p>
+                    <p class="venue"><em>IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>)</em>, 2023.</p>
+                    <p class="paper-links"><a href="https://ieeexplore.ieee.org/document/10160516">Paper</a></p>
+                </div>
+            </article>
+        </section>
 
-
-
-
-                    <!--SECTION 4 -->
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <td>
-                                <heading>Publications</heading>
-                            </td>
-
-                       
-
-                    <!-- Collision Avoidance -->
-                    <tr>
-                        <td style="padding:10px;width:30%;vertical-align:middle">
-                        <div class="one" style="width:280px;height:157.5px;margin-left:20px;">
-                            <div class="two" id='collision_avoidance' style="width:280px;height:157.5px;">
-                            <video width=280px muted autoplay loop>
-                                <source src="data/paper/collision_avoidance_1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-                        </div>
-                        </td>
-                        <td width="80%" valign="top">
-                            <p><a href="https://ieeexplore.ieee.org/document/10160516">
-                                    <papertitle>A Linear and Exact Algorithm for Whole-Body Collision Evaluation via Scale Optimization
-                                    </papertitle>
-                                    <iframe
-                                        src=""
-                                        frameborder="0" scrolling="0" width="150" height="20"
-                                        title="GitHub"></iframe>
-                                </a>
-
-                                <br>Qianhao Wang*, Zhepei Wang*, <strong> Liuao Pei</strong>,  Chao Xu and Fei Gao
-                                <br>
-                                <em> IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>)</em>, 2023.
-                                <br>
-                                London, United Kingdom.
-                                <br>
-                            </p>
-                            <p align="justify" style="font-size:13px">
-
-                            </p>
-                        </td>
-                    </tr>
-
-
-  
-
-                    <!--SECTION 8 -->
-                    <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <heading>Honors</heading>
-                                    <p>Sep. 2022, National Champion - Unmanned Aerial Vehicle Intelligent Sensing Technology Competition </p>
-                                    <p>May. 2022, National Runner-up - Robomaster AI Challenge of National University Robotics Competition </p>
-                                    <p>Oct. 2021, Qiming Astronautics Scholarship (3/180) - Harbin Institute of Technology </p>
-                                    <p>Aug. 2021, National Runner-up  - National University Robotics Competition Robomaster Mecha Match </p>
-                                    <p>Aug. 2021, Outstanding Team Leader (3/273) - National University Robotics Competition Robomaster Mecha Match </p>
-                                    <p>May. 2021, Northern Quarter - National University Robotics Competition Robomaster Mecha Match </p>
-                                    <p>Aug. 2020, National First Prize - National University Robotics Competition Robomaster Mecha Match </p>
-                                    <p>Aug. 2020, National First Prize - National University Robotics Competition Embedded Technology Category</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-
-                    <!--SECTION 8 -->
-                    <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <heading>About Me</heading>
-                                    <p> <strong>Skills</strong>: C ++ / C / Python / Matlab, PyTorch, Linux, ROS, OpenCV, Carla, AirSim
-                                    </p>
-                                    <p> <strong>Hobbies</strong>: Table Tennis, Photography, Driving
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td width="100%" align="middle">
-                                    <p align="center" style="width: 25% ">
-                                        <script type="text/javascript" id="clstr_globe"
-                                            src="//clustrmaps.com/globe.js?d=nxG_nT-wYw6PsuOXokF6vIETcV9oOM4JmZx84IO84kI"></script>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!--SECTION 10 -->
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td><br>
-                                    <p align="right">
-                                        <font size="2"> Last update: 2024.11.12. <br>
-                                            Design and source code from <a href="http://www.cs.berkeley.edu/~barron/">Jon Barron's website</a>.</font>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="visitor-map">
+            <script async id="clstr_globe" src="https://clustrmaps.com/globe.js?d=nxG_nT-wYw6PsuOXokF6vIETcV9oOM4JmZx84IO84kI"></script>
+        </div>
+        <footer>
+            <p>Last update: <time datetime="2026-09-16">2026.09.16</time>.<br>
+            Design adapted from <a href="https://jonbarron.info/">Jon Barron's website</a>.</p>
+        </footer>
+    </main>
 </body>
-
 </html>
