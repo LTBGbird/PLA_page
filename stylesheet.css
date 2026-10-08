@@ -79,7 +79,9 @@ main { max-width: 950px; margin: 0 auto; padding: 36px 20px 20px; }
 .profile { display: flex; align-items: center; gap: 44px; margin-bottom: 44px; }
 .profile-copy { flex: 1; }
 h1 { margin: 0 0 24px; text-align: center; font-size: 32px; font-weight: 400; }
-.photo { display: block; width: 204px; height: auto; flex-shrink: 0; }
+.profile-photo { width: 300px; max-width: 100%; margin: 0; flex-shrink: 0; }
+.photo { display: block; width: 100%; height: auto; }
+.profile-photo figcaption { margin-top: 10px; text-align: center; font-size: 14px; }
 h2 { margin: 0; font-size: 24px; font-weight: 400; }
 .contribution-note { margin: 6px 0 26px; color: #555; font-size: 14px; }
 .publication { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 30px; align-items: center; margin-bottom: 36px; }
@@ -93,7 +95,7 @@ footer { text-align: right; color: #555; font-size: 14px; }
 @media (max-width: 680px) {
   main { padding: 24px 20px; }
   .profile { flex-direction: column-reverse; gap: 24px; margin-bottom: 36px; }
-  .photo { width: 150px; }
+  .profile-photo { width: 300px; }
   h1 { font-size: 28px; margin-bottom: 16px; }
   .publication { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-bottom: 38px; }
   .paper-media { max-width: 400px; margin: 0 auto; }
